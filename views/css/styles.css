@@ -1,0 +1,752 @@
+@import url(https://fonts.googleapis.com/css?family=Quando);
+*, *:after, *:before {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+* {margin:0;padding:0;border:0 none;position: relative; outline: none;
+}
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Work Sans', sans-serif;
+font-family: 'Muli', sans-serif;
+font-family: 'Rubik', sans-serif;
+font-family: 'Raleway', sans-serif; */
+body {
+        margin: 0px;
+        padding: 0px;
+        background-color: #FBFBFB;
+    }
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-weight: normal;
+    }
+
+    .navbar {
+        padding-left: 120px;
+        padding-right: 200px;
+        height: 100px;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-in;
+        background-color: #FBFBFB;
+    }
+    .navbar-brand{
+        top: 10px;
+    }
+    .navbar-collapse{
+        padding-top: inherit;
+    }
+    .navanimation {
+        height: auto;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+        transition-duration: 0.3s;
+        transition-timing-function: ease-out;
+        background: #ffffff !important;
+    }
+    .align-top{
+        width: 100px;height: 100px;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-in;
+    }
+    .navimageanimation{
+        transition-duration: 0.3s;
+        transition-timing-function: ease-out;
+        height: 31px;
+         width: 31px;
+    }
+    .navdivanimation{
+        margin: 0 !important;display: inline-grid;font-size: small;
+    }
+    .navbar-toggler>.close {
+        display: inline;
+    }
+
+    .navbar-toggler.collapsed>.close,
+    .navbar-toggler:not(.collapsed)>.navbar-toggler-icon {
+        display: none;
+    }
+    .bannerrow{
+        margin-top: 56px;
+    }
+    .pariniti {
+        display:inline-grid;
+        margin-top: 56px;
+        margin: 65px 0 auto -21px;
+        line-height: 1;
+        font-family: 'Rubik', sans-serif;
+    }
+
+    .systems {
+        color: #FF8800;
+        font-family: 'Rubik', sans-serif;
+    }
+
+    
+    .navbar-light .navbar-nav .nav-link.nav-link{
+        color: #0E0E0E;
+        font-size: 14px;
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 0;
+    }
+   
+
+    /* .nav-item:hover {
+        text-decoration: underline;
+        text-decoration-color: #FF8800 !important;
+        transition-duration: 2s;
+        transition-timing-function: ease-out;
+       
+        /* color: rgb(236, 238, 238); 
+    } */
+    
+     header .nav-link:after {
+        content: "";
+        position: absolute;
+        bottom: 7px;
+        left: 10%;
+        right: 90%;
+        background: #0E0E0E;
+        height: 2px;
+        transition-property: left right;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-out;
+      }
+      .nav-link:hover:after,
+      .nav-link:focus:after,
+      .nav-link:active:after {
+        right: 10%;
+        background: #FF8800;
+        bottom:  7px;
+      }
+    
+    
+
+    .design , .meettechnology{
+        color: #0E0E0E;
+        text-shadow: 3px 3px 6px #00000029;
+        font-size: 65px;
+        font-weight: bold;
+        /* font-family: 'Montserrat', sans-serif; */
+    }
+
+    .meettechnology {
+        color: #FF8800;
+        white-space: nowrap;
+        /* font-family: 'Montserrat', sans-serif; */
+    }
+
+    .bannerimg {
+        z-index: -1;
+        left: 0px;
+    }
+
+    .ourvision {
+        color: #333632;
+        font-family: 'Muli', sans-serif;
+        font-weight: normal;       
+    }
+
+    .ourvisioninfo {
+        color: #0E0E0E;
+        font-weight: 100;
+        font-size: 26px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: lighter; 
+    }
+
+    .belivein {
+        color: #7D7D7D;
+        font-size: 30px;
+        font-weight: 100;
+        font-family: 'Muli', sans-serif;
+    }
+
+    .innovationandtransformation {
+        color: #161414;
+        font-size: 28px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: normal;
+    }
+
+    .innovationandtransformationinfo {
+        color: #4A4848;
+        font-size: 18px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: normal;
+    }
+    .bannerinfo{
+        font-family: 'Work Sans', sans-serif;
+        letter-spacing: 0;
+        color:#161414;
+        font-weight: lighter;
+    }
+    .transformationimg{
+        opacity: 0.7;
+    }
+    .company {
+        color: #0E0E0E;
+        font-family: 'Muli', sans-serif;
+    }
+
+    .companyinfo {
+        color: #0E0E0E;
+        font-weight: lighter;
+        font-family: 'Work Sans', sans-serif;
+        font-size: medium;
+        letter-spacing: 0;
+    }
+
+    .foodandsportsrow {
+        box-shadow: 0px 3px 24px #0000001A;
+        height: fit-content;
+    }
+
+    .foodindustry,
+    .sports {
+        margin-right: 50px;
+    }
+
+    .foodandsportsrowheadings {
+        color: #0E0E0E;
+        font-weight: bold;
+        font-size: 1.1rem;
+        font-family: 'Muli', sans-serif;
+    }
+
+    .foodandsportsrowpara {
+        color: #0E0E0E;
+        font-weight: lighter;
+        font-size: medium;
+        letter-spacing: 0;
+        line-height: 20px;
+        font-family: 'Work Sans', sans-serif;
+    }
+
+    .accessimg {
+        padding-top: 95px;
+    }
+
+    /* .foodimg,.sportimg{
+        position: absolute;
+        left: 0;
+        bottom: 0px;
+        padding: 30px;
+    
+    } */
+    .sports,
+    .access {
+        font-size: 20px;
+        color: #919191;
+        font-weight: normal;
+        font-family: 'Muli', sans-serif;
+        background-color: transparent;
+    }
+    .sports:hover,.access:hover{
+        color: #919191;
+    }
+    .upcomingproducts {
+        color: #333632;
+        font-size: 30px;
+        font-weight: normal;
+        font-family: 'Muli', sans-serif;
+    }
+    
+    .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+        background-color: transparent;
+        color: black;
+        text-decoration: underline;
+        text-decoration-color: #FF8800;
+        
+    }
+    li>button:focus{
+        outline: none;    
+    }
+    .healthyfoods {
+        /* padding-left: 1.8rem; */
+        font-size: 20px;
+        font-weight: bold;
+        color: #131212;
+        /* text-decoration: underline;
+        text-decoration-color: #FF8800; */
+        font-weight: bold;
+        font-family: 'Raleway', sans-serif;
+        background-color: transparent;
+    }
+    /* .healthyfoods:hover{
+        text-decoration: underline;text-decoration-color: #FF8800;
+        color:  #131212;
+    } */
+    .healthyfoodinfo{
+        color: #131212; font-weight: lighter;font-family: 'Work Sans', sans-serif;
+    }
+    .healthyfoodbuttons{
+         border: 1px solid #FF8800;
+         font-weight: normal;
+         color: #131212;
+         font-family: 'Muli', sans-serif;
+    }
+    .skewdesign {
+        transform: skewX(44deg);
+        box-shadow: inset 5px -2px 7px -4px #efeeee;
+        max-width: 0;
+        padding-left: 0;
+    }
+
+    /*Image grouo*/
+    .imggroup,.sportsimggroup,.accessimggroup{
+        cursor: pointer;
+    }
+    .imggroup:hover .productchart, .imggroup:hover .product2{
+           margin-top: -10px;
+    }
+    .imggroup:hover .product1{
+           margin-left: -10px;
+    }
+    /* .imggroup:hover .product2{
+           margin-top: -10px;
+           
+    } */
+    .imggroup:hover .product3{
+           margin-left: -10px;
+           margin-top: 10px;
+    }
+    .imggroup:hover .product4{
+           margin-top: 10px;
+           margin-left: 10px;
+    }
+    .productchart{
+        transition: margin 1s ease-out;
+        position: absolute;
+        z-index: 99;
+        border-radius: 8px;
+          
+    }
+    .product1{
+        transition: margin 1s ease-out;
+        position: absolute;
+        left: 120px;
+        top: 73px;
+        border-radius: 50%;
+        z-index: 1;
+       
+    }
+    .product2{
+        transition: margin 1s ease-out;
+        position: absolute;
+        top: 74px;
+        right: 28px;
+        border-radius: 8px;
+        z-index: 1;
+    }
+    .product3{
+        transition: margin 1s ease-out;
+        position: absolute;
+        top: 150px;
+        border-radius: 8px;
+        left: 80px;
+        z-index: 1;
+    }
+    .product4{
+        transition: margin 1s ease-out;
+        position: absolute;
+        top: 100px;
+        width: 40%;
+        border-radius: 50%;
+        left: 151px;
+    }
+    .sports1{
+        transition: all 0.3s ease-out;
+        position: absolute;
+        left: 74px;
+        width: 46px;
+        top: 100px;
+    }
+    .sports2{
+        transition: all 0.3s ease-out;
+        position: absolute;
+        left: 83px;
+        width: 75%;
+        top: 16px;
+    }.sports3{
+        transition: all  0.3s ease-out;
+        position: absolute;
+        width: 4%;
+        bottom: 0;
+        right: 0;
+        left: 232px;
+        top: 206px;
+    }.sports4{
+        transition: all 0.3s ease-out;
+        right: 0;
+        position: absolute;
+        top: 86px;
+        width: 42%;
+        left: 217px;
+    }
+    
+    .sportsimggroup:hover .sports1{
+           left:46px;
+    }
+    .sportsimggroup:hover .sports2{
+        left:100px;
+    }
+    .sportsimggroup:hover .sports3{
+        left:370px;
+    }
+    .sportsimggroup:hover .sports4{
+        left:250px;
+    }
+
+   .access1{
+    transition: all 0.3s ease-out;
+    left: 50px;
+   }
+   .access3{
+    transition: all 0.3s ease-out;
+    top: 68px;
+    z-index: 1;
+   }
+   .access2{
+    transition: all 0.3s ease-out;
+    right: 50px;
+   }
+.accessimggroup:hover .access1{
+    left: 0;
+}
+.accessimggroup:hover .access2{
+    right: 0;
+}
+.accessimggroup:hover .access3{
+    top:100px;
+}
+    .seemorediv {
+        background-color: #FF8800;
+        transform: skewX(44deg);
+        box-shadow: inset 5px 0px 3px 0px #a3a3a333;
+    }
+
+    .seemore {
+        font-size: 20px;
+        color: #FFFFFF;
+        transform: skewX(-45deg);
+        text-align: center;
+        font-weight: normal;
+        font-family: 'Muli', sans-serif;
+        background-color: transparent;
+    }
+
+    .getintouch {
+        font-weight: normal;
+        font-family: 'Muli', sans-serif;
+        font-size: 20px;
+    }
+
+    .contactusformdiv {
+        border-radius: 12px;
+        box-shadow: 5px 4px 15px 1px #0000001A;
+    }
+
+    .contactusformdivform {
+        color: #66686A;
+        border: 0;
+        border-radius: 0;
+        border-bottom: 0.5px solid #FF8800;
+        opacity: 1;
+        font-weight: 200;
+    }
+
+    .orangebuttons {
+        background-color: #FF8800;
+        border-radius: 0rem;
+        font-weight: bold;
+        font-family: 'Raleway', sans-serif;
+        opacity: 1;
+    }
+    .orangebuttons:hover{
+       color: #FF8800 !important;
+       background-color: #151614;
+        
+       box-shadow: 1px 1px 1px 1px black ;
+       /* border: #0E0E0E; */
+    }
+    .form-group>input:focus, textarea:focus{
+       
+    box-shadow: 0 0 0 0rem transparent !important;
+    border-color: #FF8800 !important; 
+}
+    .footer {
+        background-color: #FF8800;
+        color: #FFFFFF;
+        font-weight: normal;
+        font-family: 'Raleway', sans-serif;
+    }
+    .footerheading{
+        font-weight: bold;
+        font-size: 1rem;
+        font-family: 'Raleway', sans-serif;
+        opacity: 1;
+    }
+    .gototopbutton {
+        position: fixed;
+        cursor: pointer;
+        bottom: -4px;
+        right: 10px;
+        z-index: 1 !important;
+        transform: rotate(180deg);
+        animation-timing-function: ease-in;
+       /* transition-timing-function: ease-in-out;
+       transition-delay: 2s; */
+        transition-duration: 0.9s;
+        
+      }
+@media only screen and (min-width: 320px) and (max-width: 568px) {
+        .navbar {
+            padding: 8px !important;
+            height: auto;
+        }
+    }
+
+@media only screen and (max-width: 768px) {
+        .navbar {
+            padding-left: 42px;
+            padding-right: 42px;
+            height: auto;
+        }
+        .navbar-collapse{
+            padding-top: 32px;
+        }
+        .bannerrow{
+            margin-top: 32px;
+        }
+        .design {
+            color: #0E0E0E;
+            text-shadow: 3px 3px 6px #00000029;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .meettechnology {
+            color: #FF8800;
+            text-shadow: 3px 3px 6px #00000029;
+            font-size: 40px;
+            font-weight: bold;
+            white-space: pre-wrap;
+        }
+
+        .innovationandtransformation {
+            color: #161414;
+            font-size: 22px;
+            font-weight: 100;
+            overflow-wrap: break-word;
+        }
+
+        .foodindustry,
+        .sports {
+            margin-right: 10px;
+        }
+
+        .accessimg {
+            padding-top: 0px;
+        }
+        .healthyfooddiv{
+            margin: auto;
+        }
+        .healthyfoods {
+            
+            padding-left: 0rem;
+            overflow-wrap: break-word;
+            
+        }
+        .skewdesign {
+        transform: skewX(-30deg);
+        box-shadow: inset 5px -2px 7px -4px #efeeee;/*10px 0px 3px 0px #efeeee;*/
+        max-width: 0;
+        }
+        .seemorediv {
+            width: fit-content;
+            background-color: #FF8800;
+            transform: skewX(0deg);
+            box-shadow: inset 3px 0px 3px 0px #efeeee;
+        }
+        .seemore {
+        font-size: 20px;
+        color: #FFFFFF;
+        font-weight: 100;
+        transform: skewX(0deg);
+        text-align: left;
+        background-color: transparent !important;
+    }
+    .productchart{
+        transition: none;
+        top: auto;
+        position: relative;
+        left: auto;
+        margin:4px;
+        width: 100%;
+        /* filter: drop-shadow(1px 1px 2px lightgrey); */
+    }
+    .product1,.product2,.product3,.product4{
+        transition: none;
+        top: 0px;
+        position: relative;
+        left: 0;
+        margin: 4px;
+        width: 20%;
+    }
+  .imggroup:hover .productchart, .imggroup:hover .product1, .imggroup:hover .product2, .imggroup:hover .product3,.imggroup:hover .product4{
+            position: relative;
+            margin: 4px;
+    }
+    
+    .mobileanimation{
+        animation: mobileanim 1s ease-out 0s 1 normal both;
+    }
+    @keyframes mobileanim {
+        from{opacity: 0;margin-top: 0px;}to{opacity: 1;margin-top: 5px;}
+    }
+    .sports1{
+        transition: none;
+        position: relative;
+        left: 21px;
+        width: 16%;
+        top: 0px;
+    }
+    .sports2{
+     transition: none;
+     position: relative;
+     left: 0px;
+     width: 40%;
+     top: 0px;
+    }
+    .sports3{
+        transition: none;
+        position: relative;
+        width: 10px;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        top: 0;
+    }
+    .sports4{
+        transition: none;
+        position: relative;
+        right: 0; top: 0px;width:100%; left:0px;
+    }
+    .sportsimggroup:hover .sports1, .sportsimggroup:hover .sports2, .sportsimggroup:hover .sports3, .sportsimggroup:hover .sports4{
+        position: relative;left: 0;      
+    }
+    .access1,.access3,.access2{
+        position: relative;top: auto;left: auto;right: auto;width: 30%;
+    }
+   .accessimggroup:hover .access3{
+       transition: none;position: relative;top: auto;
+   }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 823px) and (orientation: landscape) {
+        .navbar {
+            padding-left: 70px;
+            padding-right: 70px;
+            height: auto;
+        }.navbar-collapse{
+            padding-top: 32px;
+        }
+        .bannerrow{
+            margin-top: 32px;
+        }
+        .productchart{
+        transition: none;
+        top: auto;
+        position: relative;
+        left: auto;
+        margin: 4px;
+        width: 100%;
+        
+    }
+  .imggroup:hover .productchart, .imggroup:hover .product1, .imggroup:hover .product2, .imggroup:hover .product3,.imggroup:hover .product4{
+            position: relative;
+            margin: 4px;
+    }
+    .product1,.product2,.product3,.product4{
+        transition: none;
+        top: 0px;
+        position: relative;
+        left: 0;
+        margin: 4px;
+        width: 20%;
+    }
+    .mobileanimation{
+        animation: mobileanim 1s ease-out 0s 1 normal both;
+    }
+    @keyframes mobileanim {
+    from{opacity: 0;margin-top: 0px;}to{opacity: 1;margin-top: 5px;}
+    }
+.sports1{
+    transition: none;
+        position: relative;
+        left: 21px;
+        width: 16%;
+        top: 0px;
+    }
+    .sports2{
+    transition: none;
+     position: relative;
+     left: 0px;
+     width: 40%;
+     top: 0px;
+    }
+    .sports3{
+        transition: none;
+        position: relative;
+        width: 10px;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        top: 0;
+    }
+    .sports4{
+        transition: none;
+        position: relative;
+        right: 0; top: 0px;width:100%; left:0px;
+    }
+    .sportsimggroup:hover .sports1, .sportsimggroup:hover .sports2, .sportsimggroup:hover .sports3, .sportsimggroup:hover .sports4{
+        position: relative;left: 0;
+    }
+    .access1,.access3,.access2{
+        position: relative;top: auto;left: auto;right: auto;width: 30%;
+    }
+   .accessimggroup:hover .access3{
+       transition: none;position: relative;top: auto;
+   }
+    .healthyfoods{
+        overflow-wrap: break-word;
+    }
+    .seemorediv{
+        width: fit-content;
+        background-color: #FF8800;
+        transform: skewX(0deg);
+        box-shadow: inset 5px 0px 3px 0px #a3a3a333;
+    }
+    .seemore{
+        transform: skew(0deg);
+    }
+    .skewdesign {
+        transform: skewX(0deg);
+        box-shadow: inset 5px -2px 7px -4px #efeeee;
+        max-width: 0;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (min-width:1024px) {
+        .navbar {
+            padding-left: 50px;
+            padding-right: 50px;
+            height: auto;
+        }
+    }
